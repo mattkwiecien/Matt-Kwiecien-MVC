@@ -13,13 +13,19 @@ namespace Matt_Kwiecien_MVC.Controllers {
 		}
 
 		public IActionResult About() {
-			ViewData["Message"] = "Your application description page.";
+			ViewData["Message"] = "All about me.";
 
 			return View();
 		}
 
-		public IActionResult Contact() {
-			ViewData["Message"] = "Your contact page.";
+        public IActionResult Projects() {
+            ViewData["Message"] = "Current projects.";
+
+            return View();
+        }
+
+        public IActionResult Contact() {
+			ViewData["Message"] = "Contact me.";
 
 			return View();
 		}
