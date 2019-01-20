@@ -32,8 +32,8 @@
             @await Html.PartialAsync("~/Views/LandingPage.cshtml")
         </div>
     }
-    <section id="about" class="flex-vertical" style="height:100%">
-        <nav class="fixed-header main-header @(IsLandingPage ? "splash":"")">
+    <section id="main" class="flex-vertical" style="height:100%">
+        <nav class="fixed-header main-header @(IsLandingPage ? "splash":"default")">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -60,7 +60,7 @@
         <div class="container body-content flex-vertical flex-vertical-body">
             @RenderBody()
         </div>
-        <div class="fixed-footer main-footer @(IsLandingPage ? "splash":"")">
+        <div class="fixed-footer main-footer @(IsLandingPage ? "splash":"default")">
             <div class="container">
                 <ul class="flex-horizontal follow-container">
                     <li>Follow:</li>
@@ -70,9 +70,7 @@
                 <p>&copy; 2019 - Matt Kwiecien</p>
             </div>
         </div>
-
     </section>
-
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>

@@ -59,9 +59,11 @@
     position: relative;
     background-color: #252a34;
 }
-
-    .main-header.fixed {
-        animation: popDown 0.2s;
+    .main-header.default {
+        border-bottom: 1px solid grey;
+        opacity: 0;
+        animation: intro 0.45s;
+        animation-fill-mode: forwards;
     }
 
     .main-header a, .main-footer a {
@@ -75,21 +77,18 @@
         }
 
 /*Footer styles*/
+.main-footer.splash,
 .main-footer {
     background-color: #1a1d24;
     z-index: 20;
     text-align: left;
 }
-
-    .main-footer.splash {
-        height: 0;
-        margin-top: 75px;
-    }
-
-    .main-footer.fixed {
-        margin-top:0;
-        height:75px;
-        transition-duration: .3s;
+    .main-footer.splash.fixed,
+    .main-footer.default {
+        height: 75px;
+        opacity: 0;
+        animation: intro 0.75s;
+        animation-fill-mode: forwards;
     }
 
     .main-footer .container {

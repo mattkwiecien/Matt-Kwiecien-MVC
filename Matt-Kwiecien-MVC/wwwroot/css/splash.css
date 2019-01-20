@@ -49,14 +49,7 @@
 /*Footer styles*/
 .main-footer.splash {
     height: 0;
-    margin-top: 75px;
 }
-
-    .main-footer.splash.fixed {
-        margin-top: 0;
-        height: 75px;
-        transition-duration: .3s;
-    }
 
 
 /*Media Queries*/

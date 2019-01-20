@@ -1,4 +1,4 @@
-﻿
+﻿//Scroll to section destination
 $('.scroll-to').click(function () {
     var anchor = $(this).attr("dest");
     $('.link-wrap').removeClass('visible');
@@ -9,8 +9,8 @@ $('.scroll-to').click(function () {
 });
 
 
-// NAV POSITION
-var navPos = ($('.main-header')[0].getBoundingClientRect().top - document.body.getBoundingClientRect().top) - 10;
+// Track nav bar position.
+var navPos = $('.main-header')[0].getBoundingClientRect().top - document.body.getBoundingClientRect().top - 10;
 var lastPos = 0;
 
 $(window).on('scroll', function () {

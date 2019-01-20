@@ -4,7 +4,9 @@
     "inputFiles": [
       "wwwroot/css/site.css",
       "wwwroot/css/globals.css",
-      "wwwroot/css/home.css"
+      "wwwroot/css/layout.css",
+      "wwwroot/css/splash.css",
+      "wwwroot/css/icons.css"
     ]
   },
   {
