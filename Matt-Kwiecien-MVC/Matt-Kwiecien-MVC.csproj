@@ -2,9 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>c0e42c70-371b-4ded-9d22-186e498accd4</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BuildBundlerMinifier" Version="2.8.391" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
