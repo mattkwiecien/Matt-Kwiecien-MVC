@@ -1,0 +1,47 @@
+﻿/*Global flex styles*/
+.flex-vertical {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.flex-horizontal {
+    -webkit-flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.flex-vertical-body, flex-horizontal-body {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.flex-vertical-body {
+    min-height: 1px;
+}
+
+.fixed-header, .fixed-footer {
+    -ms-flex: none;
+    -webkit-flex: none;
+    flex: none;
+}
+
+.flex-center-self {
+    align-content: center;
+    justify-content: center;
+}
+
+.flex-center-children {
+    align-items: center;
+}

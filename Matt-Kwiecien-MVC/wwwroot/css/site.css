@@ -1,43 +1,4 @@
-﻿/*Global flex styles*/
-.flex-vertical {
-    -webkit-box-orient: vertical;
-    -webkit-flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.flex-horizontal {
-    -webkit-flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}
-
-.flex-vertical-body, flex-horizontal-body {
-    -ms-flex: 1;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-}
-
-.flex-vertical-body {
-    min-height: 1px;
-}
-
-.fixed-header, .fixed-footer {
-    -ms-flex: none;
-    -webkit-flex: none;
-    flex: none;
-}
-
-/*Global html styles*/
+﻿/*Global html styles*/
 html {
     height: 100%;
     background-color: #252a34 !important;
@@ -48,107 +9,9 @@ body {
     background-color: #252a34;
     font-family: 'Work Sans', sans-serif;
     color: #eaeaea;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
 }
-
-.background-image {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    display: block;
-    background-image: url(../images/alexandre-debieve-561298-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    height: 100%;
-    width: 100%;
-}
-
-.container {
-    z-index:2;
-}
-
-/*Header styles*/
-.navbar {
-    padding: 15px 0;
-}
-
-.main-header .navbar-brand {
-    padding-left: 0;
-}
-
-.main-header .navbar-toggle {
-    background-color: #eaeaea;
-}
-
-.main-header {
-    font-family: 'Space Mono', monospace;
-    position: relative;
-    opacity: 0;
-    background-color: #252a34;
-    animation: intro 0.3s both;
-    -webkit-animation-delay: 0.15s;
-    animation-delay: 0.15s;
-    z-index: 20;
-}
-
-    .main-header a, .main-footer a {
-        color: #eaeaea;
-        font-weight: bold;
-    }
-
-        .main-header a:hover {
-            color: #bbb;
-            background-color: #252a34 !important;
-        }
-
-/*Footer styles*/
-.main-footer {
-    -webkit-animation: intro 0.3s both;
-    animation: intro 0.3s both;
-    -webkit-animation-delay: 0.45s;
-    animation-delay: 0.45s;
-    background-color: #1a1d24;
-    height: 76px;
-    z-index: 20;
-}
-
-    .main-footer .container {
-        padding-top: 20px;
-    }
-
-        .main-footer .container ul.follow-container {
-            padding-left: 0;
-        }
-
-            .main-footer .container ul.follow-container > li {
-                padding-right: 30px;
-                font-weight: bold;
-                font-size: 14px;
-            }
-
-        .main-footer .container > p {
-            font-size: 11px;
-        }
-
-
-    .main-footer a:hover {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .main-footer a:hover {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .main-footer a:focus {
-        text-decoration: none;
-    }
 
 /*SVG styles*/
 .svg-link {
@@ -161,34 +24,10 @@ body {
     transform: translate(-50%,-50%);
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 ul {
     list-style-type: none;
 }
 
-/*Media Queries*/
-@keyframes intro {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes intro {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+a {
+    cursor:pointer;
 }

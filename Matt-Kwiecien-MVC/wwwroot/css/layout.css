@@ -1,0 +1,149 @@
+﻿.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-image: url(../images/alexandre-debieve-561298-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+}
+
+.home-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 22px;
+}
+
+#home .button {
+    margin-top: 20px;
+    padding: 6px 20px;
+    border: 2px solid #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 13pt;
+    transition: all .5s;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+    #home .button:hover {
+        background-color: #252a34;
+        border-color: #252a34;
+    }
+
+        #home .button:hover .icon {
+            transform: rotate(90deg);
+        }
+
+
+/*Header styles*/
+.navbar {
+    padding: 15px 0;
+}
+
+.main-header .navbar-brand {
+    padding-left: 0;
+}
+
+.main-header .navbar-toggle {
+    background-color: #eaeaea;
+}
+
+.main-header {
+    font-family: 'Space Mono', monospace;
+    position: relative;
+    background-color: #252a34;
+}
+
+    .main-header.fixed {
+        animation: popDown 0.2s;
+    }
+
+    .main-header a, .main-footer a {
+        color: #eaeaea;
+        font-weight: bold;
+    }
+
+        .main-header a:hover {
+            color: #bbb;
+            background-color: #252a34 !important;
+        }
+
+/*Footer styles*/
+.main-footer {
+    background-color: #1a1d24;
+    z-index: 20;
+    text-align: left;
+}
+
+    .main-footer.splash {
+        height: 0;
+        margin-top: 75px;
+    }
+
+    .main-footer.fixed {
+        margin-top:0;
+        height:75px;
+        transition-duration: .3s;
+    }
+
+    .main-footer .container {
+        padding-top: 20px;
+    }
+
+        .main-footer .container ul.follow-container {
+            padding-left: 0;
+        }
+
+            .main-footer .container ul.follow-container > li {
+                padding-right: 30px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+        .main-footer .container > p {
+            font-size: 11px;
+        }
+
+
+    .main-footer a:hover {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .main-footer a:hover {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .main-footer a:focus {
+        text-decoration: none;
+    }
+
+/*Media Queries*/
+@keyframes intro {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes intro {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
