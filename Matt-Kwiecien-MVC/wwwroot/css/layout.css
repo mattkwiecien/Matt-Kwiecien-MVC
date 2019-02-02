@@ -1,47 +1,4 @@
-﻿.background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    background-image: url(../images/alexandre-debieve-561298-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    height: 100%;
-    width: 100%;
-}
-
-.home-text {
-    font-family: 'Space Mono', monospace;
-    font-size: 22px;
-}
-
-#home .button {
-    margin-top: 20px;
-    padding: 6px 20px;
-    border: 2px solid #fff;
-    box-sizing: inherit;
-    display: inline-block;
-    font-size: 13pt;
-    transition: all .5s;
-    cursor: pointer;
-    vertical-align: middle;
-}
-
-    #home .button:hover {
-        background-color: #252a34;
-        border-color: #252a34;
-    }
-
-        #home .button:hover .icon {
-            transform: rotate(90deg);
-        }
-
-
-/*Header styles*/
+﻿/*Header styles*/
 .navbar {
     padding: 15px 0;
 }
@@ -82,7 +39,6 @@
         }
 
 /*Footer styles*/
-.main-footer.splash,
 .main-footer {
     background-color: #1a1d24;
     z-index: 20;

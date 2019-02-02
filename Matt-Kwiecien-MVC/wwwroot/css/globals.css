@@ -45,3 +45,9 @@
 .flex-center-children {
     align-items: center;
 }
+
+.flex-left {
+    align-content: flex-start;
+    justify-content: flex-start;
+    text-align:left;
+}
