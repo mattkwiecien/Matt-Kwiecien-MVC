@@ -50,15 +50,20 @@
     padding-left: 0;
 }
 
-.main-header .navbar-toggle {
-    background-color: #eaeaea;
+.navbar-toggle {
+    border: 1px solid #eaeaea;
 }
+
+    .navbar-toggle .icon-bar {
+        background-color: #eaeaea;
+    }
 
 .main-header {
     font-family: 'Space Mono', monospace;
     position: relative;
     background-color: #252a34;
 }
+
     .main-header.default {
         border-bottom: 1px solid grey;
         opacity: 0;
@@ -83,7 +88,7 @@
     z-index: 20;
     text-align: left;
 }
-    .main-footer.splash.fixed,
+
     .main-footer.default {
         height: 75px;
         opacity: 0;

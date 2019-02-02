@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     display: block;
-    background-image: url(../images/alexandre-debieve-561298-unsplash.jpg);
+    background-image: url(../images/circuitboard.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,7 +48,7 @@
 
 /*Footer styles*/
 .main-footer.splash {
-    height: 0;
+    height: 75px;
 }
 
 
