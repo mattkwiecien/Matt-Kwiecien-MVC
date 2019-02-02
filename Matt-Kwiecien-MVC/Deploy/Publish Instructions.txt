@@ -1,0 +1,4 @@
+1. dotnet publish -o site
+2. zip files in bin/debug/publish into site.zip
+3. zip site.zip with aws-windows-deployment-manifest.json into matt-kwiecien-mvc.zip
+4. upload matt-kwiecien-mvc.zip to beanstalk.

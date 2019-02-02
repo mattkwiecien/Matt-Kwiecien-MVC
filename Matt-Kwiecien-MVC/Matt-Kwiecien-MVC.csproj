@@ -17,5 +17,17 @@
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.1.1" />
+  </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="web.config" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+  
 </Project>
