@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Deploy\aws-windows-deployment-manifest.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="2.8.391" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
@@ -27,6 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Deploy\aws-windows-deployment-manifest.json" />
     <None Include="web.config" CopyToPublishDirectory="Always" />
   </ItemGroup>
   
