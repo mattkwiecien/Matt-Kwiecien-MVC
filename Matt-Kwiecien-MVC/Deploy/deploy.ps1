@@ -1,5 +1,5 @@
 #Zip new published site
-Compress-Archive -Path ((Get-Item -Path ".\").FullName + "\..\bin\debug\netcoreapp2.1\") -DestinationPath site.zip
+Compress-Archive -Path ((Get-Item -Path ".\").FullName + "\..\bin\debug\netcoreapp2.1\publish\*") -DestinationPath site.zip
 
 #Remove old deploy package
 if (Test-Path matt-kwiecien-mvc.zip) {
