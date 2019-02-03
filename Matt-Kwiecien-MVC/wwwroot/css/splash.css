@@ -1,10 +1,15 @@
-﻿.background-image {
-    position: fixed;
+﻿.background-image-wrapper {
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     display: block;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/circuitboard.jpg);
+    height:100%;
+    width:100%;
+}
+
+.background-image {
+    background-image: url(../images/circuitboard.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,11 +17,12 @@
     -webkit-filter: blur(5px);
     height: 100%;
     width: 100%;
+    min-width: 1920px;
 }
 
 .home-text {
     font-family: 'Space Mono', monospace;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 #home .button {
@@ -25,7 +31,7 @@
     border: 2px solid #fff;
     box-sizing: inherit;
     display: inline-block;
-    font-size: 13pt;
+    font-size: 15pt;
     transition: all .5s;
     cursor: pointer;
     vertical-align: middle;
@@ -43,7 +49,7 @@
 
 /*Header styles*/
 .main-header.splash.fixed {
-    animation: popDown 0.2s;
+    animation: popDown 0.5s;
 }
 
 /*Footer styles*/
@@ -51,14 +57,11 @@
     height: 75px;
 }
 
-.about-me {
-    background-color: rgba(37,42,52,0.6);
-    height: 100%;
-    justify-content: center;
+.home-wrapper {
+    overflow: hidden !important;
+    height: calc(100vh + 53px);
 }
-
 /*Media Queries*/
-
 @keyframes popDown {
     0% {
         transform: translateY(-100px);

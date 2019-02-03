@@ -19,13 +19,9 @@ $(window).on('scroll', function () {
 
     if (pos >= navPos && lastPos < pos) {
         $('.main-header').addClass('fixed');
-        $('.main-footer').addClass('fixed');
-        $('.background-image').addClass('about');
     }
-    if (pos + $('.main-footer').height() < navPos && lastPos > pos) {
+    if (pos < navPos && lastPos > pos) {
         $('.main-header').removeClass('fixed');
-        $('.main-footer').removeClass('fixed');
-        $('.background-image').remove('about');
     }
     lastPos = pos;
 });

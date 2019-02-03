@@ -1,0 +1,41 @@
+﻿.me-img {
+    background-image: url(../images/me.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #252a34 inset;
+}
+
+.about-container {
+    margin: 0 33%;
+    text-align: left;
+    font-size:17px;
+}
+
+.ul-no-padding{
+    padding-left:0;
+}
+
+.center-text {
+    text-align:center;
+}
+.hero-container {
+    text-align: left;
+    border-bottom: 1px solid grey;
+    background-color: #303643;
+}
+.padding-top-bottom{
+    padding: 20px 0;
+}
+
+.hero-description {
+    font-style: italic;
+    font-size: 17px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        margin: 0 25px;
+    }
+}

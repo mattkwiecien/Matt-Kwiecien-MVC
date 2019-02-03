@@ -24,6 +24,10 @@ body {
     transform: translate(-50%,-50%);
 }
 
+.body-content{
+    overflow-y:scroll;
+}
+
 ul {
     list-style-type: none;
 }

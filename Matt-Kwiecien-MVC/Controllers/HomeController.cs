@@ -12,12 +12,6 @@ namespace Matt_Kwiecien_MVC.Controllers {
 			return View();
 		}
 
-		public IActionResult About() {
-			ViewData["Message"] = "All about me.";
-
-			return View();
-		}
-
         public IActionResult Projects() {
             ViewData["Message"] = "Current projects.";
 

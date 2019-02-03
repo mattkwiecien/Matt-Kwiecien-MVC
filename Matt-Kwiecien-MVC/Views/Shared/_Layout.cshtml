@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="~/css/layout.css" />
         <link rel="stylesheet" href="~/css/splash.css" />
         <link rel="stylesheet" href="~/css/icons.css" />
+        <link rel="stylesheet" href="~/css/about.css" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -28,11 +29,9 @@
 </head>
 <body>
     @if (IsLandingPage) {
-        <div style="overflow-x:hidden;">
-            @await Html.PartialAsync("~/Views/LandingPage.cshtml")
-        </div>
+        @await Html.PartialAsync("~/Views/_LandingPage.cshtml")
     }
-    <section id="main" class="flex-vertical" style="height:100%">
+    <section id="main" class="flex-vertical full-height">
         <nav class="fixed-header main-header @(IsLandingPage ? "splash":"default")">
             <div class="container">
                 <div class="navbar-header">
@@ -50,22 +49,24 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a asp-area="" asp-controller="Home" asp-action="Projects">Projects</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                        <environment include="Development">
+                            <li><a asp-area="" asp-controller="Home" asp-action="Projects">Projects</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                        </environment>
                     </ul>
                 </div>
             </div>
         </nav>
         <partial name="_CookieConsentPartial" />
-        <div class="container body-content flex-vertical flex-vertical-body">
+        <div class="body-content flex-vertical flex-vertical-body">
             @RenderBody()
         </div>
         <div class="fixed-footer main-footer @(IsLandingPage ? "splash":"default")">
             <div class="container">
                 <ul class="flex-horizontal follow-container">
                     <li>Follow:</li>
-                    <li><a href="https://github.com/mattkwiecien" target="_blank"><img class="svg-link" src="~/images/github.svg" />Github</a></li>
-                    <li><a href="https://stackoverflow.com/users/6419909/mattkwish" target="_blank"><img class="svg-link" src="~/images/stackoverflow.svg" />Stack Overflow</a></li>
+                    <li><a href="https://github.com/mattkwiecien" target="_blank"><img class="svg-link" src="~/images/icons/github.svg" />Github</a></li>
+                    <li><a href="https://stackoverflow.com/users/6419909/mattkwish" target="_blank"><img class="svg-link" src="~/images/icons/stackoverflow.svg" />Stack Overflow</a></li>
                 </ul>
                 <p>&copy; 2019 - Matt Kwiecien</p>
             </div>

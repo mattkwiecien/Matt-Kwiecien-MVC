@@ -5,6 +5,7 @@
 
 .main-header .navbar-brand {
     padding-left: 0;
+    font-size: 22px;
 }
 
 .navbar-toggle {
@@ -19,10 +20,10 @@
     font-family: 'Space Mono', monospace;
     position: relative;
     background-color: #252a34;
+    border-bottom: 1px solid grey;
 }
 
     .main-header.default {
-        border-bottom: 1px solid grey;
         opacity: 0;
         animation: intro 0.45s;
         animation-fill-mode: forwards;
@@ -63,7 +64,7 @@
             .main-footer .container ul.follow-container > li {
                 padding-right: 30px;
                 font-weight: bold;
-                font-size: 14px;
+                font-size: 18px;
             }
 
         .main-footer .container > p {
