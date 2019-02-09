@@ -9,7 +9,6 @@
 }
 
 .background-image {
-    background-image: url(../images/circuitboard.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +53,7 @@
 
 /*Footer styles*/
 .main-footer.splash {
-    height: 75px;
+    min-height: 75px;
 }
 
 .home-wrapper {
